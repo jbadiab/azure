@@ -14,7 +14,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             name = req_body.get('name')
 
     if name:
-        return func.HttpResponse(f"Hi {name}!\nThis is an Azure Function test")
+        return func.HttpResponse(f"Hi {name}!\nThis is an Azure Function test 1")
     else:
         return func.HttpResponse(
              "Please pass a name on the query string or in the request body",
